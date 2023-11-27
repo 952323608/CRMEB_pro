@@ -35,6 +35,7 @@ Route::miss(function () {
                         return view(app()->getRootPath() . 'public' . DS . 'mobile.html', ['siteName' => sys_config('site_name'), 'siteUrl' => sys_config('site_url') . '/pages/index/index']);
                     }
                 }
+
             } else {
                 return view(app()->getRootPath() . 'public' . DS . 'index.html');
             }
