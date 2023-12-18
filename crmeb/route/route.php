@@ -11,6 +11,7 @@ Route::miss(function () {
         $appName = explode('/', $appRequest)[0] ?? '';
     }
 
+
     switch (strtolower($appName)) {
         case config('app.admin_prefix', 'admin'):
         case 'kefu':
